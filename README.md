@@ -2,10 +2,12 @@
 Scrapes a website using [Selenium](https://pypi.org/project/selenium/) and sends results (text and images) to user's email every few hours   
 *Used for monitoring hurricanes and automating sending hurricane alerts to email*
 
+<div style="padding:100px; display: block; margin-left:auto; margin-right:auto;">
 <figure>
 	<img src="scraper.gif" height="350"/>
 	<figcaption>Used for monitoring Hurricane Isaias in July 2020</figcaption>
 </figure>
+</div>
 
 
 **To use**:  
