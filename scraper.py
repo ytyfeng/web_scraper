@@ -1,9 +1,14 @@
 '''
-Scraps a website and send content to an email address every few hours
+Scrapes a website and sends content to an email address every few hours
  
-Used for monitoring hurricanes
+Used for monitoring Atlantic hurricanes
 
-Ty Feng
+Usage: 
+python scraper.py -e <RECIPIENT_EMAIL>
+
+
+2020 © Ty Feng
+
 '''
 
 from selenium import webdriver
@@ -19,16 +24,16 @@ args = vars(ap.parse_args())
 EMAIL = args["email"]
 
 options = Options()
-options.headless = True
+options.headless = True # using Chrome without opening its GUI display
 options.add_argument("--window-size=1920,1200")
-DRIVER_PATH="./chromedriver" # install Chrome driver compatiable with the Chrome you installed
+DRIVER_PATH="./chromedriver" # where you put your chromdriver
 
-os.environ['TZ'] = 'EST+05EDT,M4.1.0,M10.5.0'
+os.environ['TZ'] = 'EST+05EDT,M4.1.0,M10.5.0' # set to Eastern time
 time.tzset()
 
-timeout = 32  # number of times of iteration
-wait_interval = 3 # hours before next iteration
-wait_bool = False # boolean variable to control 3 hours of waiting time between each email alert
+timeout = 32        # number of times of iteration
+wait_interval = 3   # hours before the next iteration
+wait_bool = False   # boolean variable to control 3 hours of waiting time between each email alert
 while timeout > 0:
     if wait_bool == False:
         driver = webdriver.Chrome(options=options, executable_path=DRIVER_PATH)
