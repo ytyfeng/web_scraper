@@ -1,9 +1,9 @@
 # Web Scraper & Automated Email Alert Program
-## Scrapes a website using [Selenium](https://pypi.org/project/selenium/) and sends results (text and images) to user's email every few hours
+Scrapes a website using [Selenium](https://pypi.org/project/selenium/) and sends results (text and images) to user's email every few hours   
 *Used for monitoring hurricanes and automating sending hurricane alerts to email*
 
 
-*To use*:  
+**To use**:  
 1. Download [Chrome Driver](https://chromedriver.chromium.org/).  
 2. Download Chrome that is supported by the Chrome Driver.  
 3. Put Chrome binaries in a local directory and link them to the system through `.bashrc`. Specifically, add something like this to the `.bashrc` file in your root directory:
@@ -27,7 +27,7 @@ mutt
 nohup python scraper.py -e <RECIPIENT_EMAIL> &
 ```
 
-*Program overview*:
+**Program overview**:
 1. Using Chrome Driver, get a web page.
 ``` python
 driver.get("https://www....")
