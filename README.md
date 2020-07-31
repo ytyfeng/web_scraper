@@ -2,6 +2,7 @@
 Scrapes a website using [Selenium](https://pypi.org/project/selenium/) and sends results (text and images) to user's email every few hours   
 *Used for monitoring hurricanes and automating sending hurricane alerts to email*
 
+![](scraper.gif) \
 
 **To use**:  
 1. Download [Chrome Driver](https://chromedriver.chromium.org/).  
