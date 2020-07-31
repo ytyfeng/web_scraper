@@ -2,7 +2,11 @@
 Scrapes a website using [Selenium](https://pypi.org/project/selenium/) and sends results (text and images) to user's email every few hours   
 *Used for monitoring hurricanes and automating sending hurricane alerts to email*
 
-<img src="scraper.gif" height="250"/>
+<figure>
+	<img src="scraper.gif" height="350"/>
+	<figcaption>Used for monitoring Hurricane Isaias in July 2020</figcaption>
+</figure>
+
 
 **To use**:  
 1. Download [Chrome Driver](https://chromedriver.chromium.org/).  
