@@ -65,3 +65,6 @@ mutt -e 'set content_type=text/html crypt_use_gpgme=no' -a <EMAIL_ATTACHMENTS> -
 ``` python
 pause.hours(wait_interval)
 ```
+
+**Web Demo**:  
+Go to [tyfeng.com/hurricanes]("https://www.ocf.berkeley.edu/~tyfeng/hurricanes/"). 
