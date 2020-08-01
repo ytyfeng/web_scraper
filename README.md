@@ -67,4 +67,4 @@ pause.hours(wait_interval)
 ```
 
 **Web Demo**:  
-Go to [tyfeng.com/hurricanes]("https://www.ocf.berkeley.edu/~tyfeng/hurricanes/"). 
+Go to [tyfeng.com/hurricanes](https://www.ocf.berkeley.edu/~tyfeng/hurricanes/). 
